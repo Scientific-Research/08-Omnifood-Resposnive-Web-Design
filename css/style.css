@@ -83,6 +83,7 @@ AND GIVES MORE PRIORITY TO THE BELOW PSEUDO CLASS AND ALL THE FEATURES RE AVAILA
   padding: 4.8rem 0 9.6rem 0; /*We use padding here, because we want to create top and bottom spaces inside and between the GRID elements.*/
 }
 
+/* for width = 1200px and width under 1200px, Mediaquery will overwrite the background-color to orangered - but more than 1200px, the background-color would be the same color as before and it will no be overwritten! */
 @media (max-width: 1200px) {
   .section-hero {
     background-color: orangered;
