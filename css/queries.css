@@ -18,6 +18,11 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     /* We make the font-size a little bit smaller to stay still in 3 line instead of 4 lines!*/
     font-size: 4.4rem;
   }
+
+  /* changing the column from three to two columns in 1344px or lower!*/
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* - Font sizes (px):
