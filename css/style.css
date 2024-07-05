@@ -84,20 +84,20 @@ AND GIVES MORE PRIORITY TO THE BELOW PSEUDO CLASS AND ALL THE FEATURES RE AVAILA
 }
 
 /* for width = 1200px and width under 1200px(BECAUSE MAX-WIDTH IS 1200px), Media query will overwrite the background-color to orangered - but for more than 1200px, the background-color would be the same color as before and it will no be overwritten! */
-@media (max-width: 1200px) {
+/* @media (max-width: 1200px) {
   .section-hero {
     background-color: orangered;
   }
-}
+} */
 
 /* exactly like max-width:1200px => for width 600px and under 600px(BECAUSE MAX-WIDTH IS 600PX), Media query will create or when there is already there a border, will overwrite a border around hero section with blue color - but for more than 600px, it will not create a blue border around hero section or will not overwrite it!*/
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
   .section-hero {
     border: 20px dashed blue;
-    background-color: blue;
-    /* FROM 600px AND UNDER 600px, THE COLOR WOULD NOT BE ORANGERED ANYMORE, RATHER, IT WILL BE OVERWRITTEN BY BLUE COLOR HERE! - WHEN THERE IS CONFLICT BETWENN THEM, ONLY THE LAST ONE IN CODE WILL BE APPLIED LIKE HERE: FOR 600PX AND UNDER THAT, BOTH COLORS => orangered and blue WILL BE APPLIED, BUT THE LAST ONE IN CODE, IT MEANS ONLY THE BLUE COLOR WILL BE APPLIED!*/
-  }
-}
+    background-color: blue; */
+/* FROM 600px AND UNDER 600px, THE COLOR WOULD NOT BE ORANGERED ANYMORE, RATHER, IT WILL BE OVERWRITTEN BY BLUE COLOR HERE! - WHEN THERE IS CONFLICT BETWENN THEM, ONLY THE LAST ONE IN CODE WILL BE APPLIED LIKE HERE: FOR 600PX AND UNDER THAT, BOTH COLORS => orangered and blue WILL BE APPLIED, BUT THE LAST ONE IN CODE, IT MEANS ONLY THE BLUE COLOR WILL BE APPLIED!*/
+/* }
+} */
 
 /* FOR ANOTHER EXAMPLE, WHEN I SWITCH BOTH 600px AND 1200px IN SUCH A WAY THAT 1200px WILL BE AS THE LAST IN OUR CODE, THE COLOR OF HERO SECTION WOULD BE ALWAYS ORANGERED(BECAUSE THE LAST ONE IN CODE IS 1200px =>IT WILL OVERWRITE THE BLUE COLOR) AND ONLY FOR 600px AND UNDER THAT, WE WILL HAVE A SHADED BLUE COLOR FOR SECTION HERO! */
 
