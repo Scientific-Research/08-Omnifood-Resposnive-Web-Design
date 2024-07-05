@@ -64,6 +64,11 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   .main-nav-list {
     gap: 3.2rem;
   }
+
+  /* To reduce only right and left paddings for testimonial texts to have more space and the texts will be maximum in four lines and not more => and so looks good! */
+  .testimonials-container {
+    padding: 9.6rem 3.2rem;
+  }
 }
 
 /* - Font sizes (px):
