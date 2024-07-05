@@ -101,6 +101,11 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   .hero-img {
     width: 60%; /*get the complete width of its parent(hero-image-box) which is a complete GRID cell.*/
   }
+
+  /* delivered-meals class is a flex item and using text-align: center; doesn't work for that because it is not a inline element, rather it is a flex item and to center a flex item, we have to use the justify-content: center; */
+  .delivered-meals {
+    justify-content: center;
+  }
 }
 
 /* - Font sizes (px):
