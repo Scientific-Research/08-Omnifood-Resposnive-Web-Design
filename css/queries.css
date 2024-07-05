@@ -81,6 +81,26 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     /* 8px / 16px = 0.5 * 100 = 50% => 50% is 8px */
     font-size: 50%;
   }
+
+  /* we make the entire hero only one column for 944px and below that! */
+  .hero {
+    grid-template-columns: 1fr;
+  }
+
+  /* TEXT IS AN INLINE ELEMENT AND WE CAN CENTER TEXT WITH text-align: center; */
+  .hero-text-box {
+    text-align: center;
+  }
+
+  /* IMAGE LIKE TEXT IS AN INLINE ELEMENT AND WE CAN CENTER IT USING THE SAME ABOVE SATEMENT:  text-align: center; */
+  .hero-image-box {
+    text-align: center;
+  }
+
+  /* We have to make the hero image smaller! */
+  .hero-img {
+    width: 60%; /*get the complete width of its parent(hero-image-box) which is a complete GRID cell.*/
+  }
 }
 
 /* - Font sizes (px):
