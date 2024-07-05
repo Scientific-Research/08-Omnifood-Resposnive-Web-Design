@@ -25,6 +25,18 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   }
 }
 
+/*  A NEW MEDIA QUERY FOR 1200px => 1200px / 16 = 75em */
+/******************************************/
+/*BELOW 1200px (Tablets in Landscape mode and not in Portrait mode!)*/
+/******************************************/
+@media (max-width: 75em) {
+  html {
+    /* we want here to make everything smaller just one pixel, we change the font-size from 10px to 9px */
+    /* 9px / 16px = 0.5625 * 100 = 56.25% => 56.25% is 9px */
+    font-size: 56.25%;
+  }
+}
+
 /* - Font sizes (px):
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
 
