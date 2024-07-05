@@ -35,6 +35,7 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     /* 9px / 16px = 0.5625 * 100 = 56.25% => 56.25% is 9px */
     font-size: 56.25%;
   }
+
   /* to decrease the grid gap in entire page where grid layout is available!*/
   .grid {
     column-gap: 4.8rem;
@@ -53,9 +54,15 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   .header {
     padding: 0 3.2rem;
   }
+
   /* to decrease the distance between woman-image in hero section and the texts in the left side!*/
   .hero {
     gap: 4.8rem;
+  }
+
+  /* Change the space between the items in nav like How it works, Meals, ... */
+  .main-nav-list {
+    gap: 3.2rem;
   }
 }
 
