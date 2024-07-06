@@ -121,6 +121,14 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   .meal-content {
     padding: 2.4rem 3.2rem 3.2rem 3.2rem;
   }
+
+  .gallery {
+    grid-template-columns: repeat(6, 1fr);
+  }
+
+  .section-testimonials {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* - Font sizes (px):
