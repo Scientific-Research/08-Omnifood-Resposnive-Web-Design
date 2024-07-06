@@ -195,6 +195,7 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     /* ADDING NOW A REALLY REALLY COOL EFFECT WHICH WHOLE NAVIGATION COMES SLIGHTLY FROM RIGHT SIDE IN */
     /* ******************************** */
     transform: translateX(100%);
+    /* moving the nav page from right side to the page => 100% in X direction means => it goes to the right side out of the page and transform: translateX(0); means it comes back to the page (original state) and then we will see it there!*/
   }
 
   /* This selector works because there is .nav-open selector in header, when i remove this selector from header, it would not work anymore! */
@@ -204,7 +205,8 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     pointer-events: auto;
     visibility: visible;
 
-    transform: translateX(-100%);
+    transform: translateX(0);
+    /* moving the nav page from right side to the page => 100% in X direction means => it goes to the right side out of the page and transform: translateX(0); means it comes back to the page (original state) and then we will see it there!*/
   }
 
   /* This selector works because there is .nav-open selector in header, when i remove this selector from header, it would not work anymore! */
