@@ -190,6 +190,11 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
 
     /* Animation: */
     transition: all 0.5s;
+
+    /* ******************************** */
+    /* ADDING NOW A REALLY REALLY COOL EFFECT WHICH WHOLE NAVIGATION COMES SLIGHTLY FROM RIGHT SIDE IN */
+    /* ******************************** */
+    transform: translateX(100%);
   }
 
   /* This selector works because there is .nav-open selector in header, when i remove this selector from header, it would not work anymore! */
@@ -198,6 +203,8 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     /* we have to bring the above parameters back to make the nav page visible again! */
     pointer-events: auto;
     visibility: visible;
+
+    transform: translateX(-100%);
   }
 
   /* This selector works because there is .nav-open selector in header, when i remove this selector from header, it would not work anymore! */
@@ -209,6 +216,8 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   .nav-open .icon-mobile-nav[name="menu-outline"] {
     display: none;
   }
+
+  /* ADDING NOW A REALLY REALLY COOL EFFECT WHICH WHOLE NAVIGATION COMES SLIGHTLY FROM RIGHT SIDE IN - THIS STEP IS DONE IN main-nav CLASS USING TRANSFORM AND TRANSLATE => Please see this class above!*/
 
   /* the display in this class was already set to flex, but we want to display the content vertically in 944px and below that, that's why we have to change the flex-direction to column and bring back the gap to 4.8rem!*/
   .main-nav-list {
