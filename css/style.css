@@ -73,6 +73,13 @@ AND GIVES MORE PRIORITY TO THE BELOW PSEUDO CLASS AND ALL THE FEATURES RE AVAILA
   /*Normally we have to add the transition to the original state => above link, but we added it already to .main-nav-link:link class above and that is eough and is valid for here too!*/
 }
 
+/* MOBILE*/
+.btn-mobile-nav {
+}
+
+.icon-mobile-nav {
+}
+
 /******************************************/
 /*HERO SECTION*/
 /******************************************/
