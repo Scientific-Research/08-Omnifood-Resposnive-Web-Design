@@ -161,6 +161,17 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     /* width: 100%; OR*/
     width: 100vw; /*entire view port width => it covers only the entire width of the current page that i see now on the monitor!*/
     height: 100vh; /*entire view port height => it covers only the entire height of the current page that i see now on the monitor!*/
+
+    /*  Center the item on the white page using flex page, otherwise the items stay top left*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* the display in this class was already set to flex, but we want to display the content vertically in 944px and below that, that's why we have to change the flex-direction to column and bring back the gap to 4.8rem!*/
+  .main-nav-list {
+    flex-direction: column;
+    gap: 4.8rem;
   }
 }
 
