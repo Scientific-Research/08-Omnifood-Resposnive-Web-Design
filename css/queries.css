@@ -129,6 +129,19 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   .section-testimonials {
     grid-template-columns: 1fr;
   }
+
+  /* 3/5 = 60% + 2/5 = 40% */
+  .cta {
+    grid-template-columns: 3fr 2fr;
+  }
+
+  .cta-form {
+    grid-template-columns: 1fr;
+  }
+
+  .btn--form {
+    margin-top: 1.2rem;
+  }
 }
 
 /* - Font sizes (px):
