@@ -166,6 +166,48 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    /* Hide the navigation => because it must be hidden as default and then when i click on the Symbol it should be opened! */
+    /* THE PROBLEM WITH display: none; IS THAT, WE CAN NOT DO ANY TARNSITION AT ALL, THAT'S WHY I WILL COMMENT IT OUT!*/
+    /* display: none; */
+
+    /* SOME STEPS TO HIDE THE NAV PAGE: */
+
+    /* 1) HIDE IT VISUALLY: */
+    opacity: 0; /*This will hide the element(nav page), something like display:none; but not exactly that, because with display: none, we can not animate, but with opacity set to zero, we can animate!*/
+
+    /* opacity: 20%; */
+    /*with this opacity, the nav page is a little bit visible => it means we can give the different values to the opacity and see the visibility of the page!*/
+
+    /* NOW, WE HAVE TO THINK ABOUT THE MECHANISM OF THE SHOWING AND HIDING THE NAV PAGE: */
+
+    /* 2) MAKE IT UNACCESSIBLE TO MOUSE AND KEYBOARD: */
+    /* with opacity:0 it is still on the page and for example with TAB we can activate it yet - but with display:none, it will not exist on the page anymore and doesn't work at all! */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers*/
+    visibility: hidden;
+
+    /* Animation: */
+    transition: all 0.5s;
+  }
+
+  /* This selector works because there is .nav-open selector in header, when i remove this selector from header, it would not work anymore! */
+  .nav-open .main-nav {
+    opacity: 1;
+    /* we have to bring the above parameters back to make the nav page visible again! */
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  /* This selector works because there is .nav-open selector in header, when i remove this selector from header, it would not work anymore! */
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  /* This selector works because there is .nav-open selector in header, when i remove this selector from header, it would not work anymore! */
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
   }
 
   /* the display in this class was already set to flex, but we want to display the content vertically in 944px and below that, that's why we have to change the flex-direction to column and bring back the gap to 4.8rem!*/
