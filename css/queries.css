@@ -189,7 +189,8 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     visibility: hidden;
 
     /* Animation: */
-    transition: all 0.5s;
+    /* ease-in: move fast in the beginning and move slow at the end! When we specify nothing => the movement would be linear!*/
+    transition: all 0.5s ease-in;
 
     /* ******************************** */
     /* ADDING NOW A REALLY REALLY COOL EFFECT WHICH WHOLE NAVIGATION COMES SLIGHTLY FROM RIGHT SIDE IN */
