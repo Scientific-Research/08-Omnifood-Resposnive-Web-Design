@@ -78,6 +78,9 @@ AND GIVES MORE PRIORITY TO THE BELOW PSEUDO CLASS AND ALL THE FEATURES RE AVAILA
   border: none;
   background: none;
   cursor: pointer;
+
+  /* BY DEFAULT(FOR LARGE SCREEN), WE HAVE TO HIDE THE ENTIRE BUTTON*/
+  display: none;
 }
 
 .icon-mobile-nav {
