@@ -86,6 +86,17 @@ AND GIVES MORE PRIORITY TO THE BELOW PSEUDO CLASS AND ALL THE FEATURES RE AVAILA
   color: #333;
 }
 
+/* TO NOT DISPLAY THE CLOSE ICON, WE HAVE TWO SOLUTIONS: BOTH ARE WORKING:*/
+/*FIRST SOLUTION => MY SOLUTION:*/
+/* .close {
+  display: none;
+} */
+
+/* SECOND SOLUTION => JONAS SOLUTION*/
+.icon-mobile-nav[name="close-outline"] {
+  display: none;
+}
+
 /******************************************/
 /*HERO SECTION*/
 /******************************************/
