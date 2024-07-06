@@ -148,6 +148,20 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   .btn-mobile-nav {
     display: block;
   }
+
+  .main-nav {
+    background-color: #fff;
+    /* The parent has to be positioned as relative => The parent is header, but we want that to be displayed in entire page, that's why the parent would be entire view port => that's why we don't need to specify the parent and when i specify that, that i did already in header class, but i commented it out already => the result will not change and will stay the same!*/
+
+    /* THE THREE ROUTINE STAMENETS THAT WE NEED ALWAYS TO DO THE ABSOLUTE POSITIONING:*/
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    /* width: 100%; OR*/
+    width: 100vw; /*entire view port width => it covers only the entire width of the current page that i see now on the monitor!*/
+    height: 100vh; /*entire view port height => it covers only the entire height of the current page that i see now on the monitor!*/
+  }
 }
 
 /* - Font sizes (px):
