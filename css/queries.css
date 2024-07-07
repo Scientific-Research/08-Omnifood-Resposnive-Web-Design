@@ -367,13 +367,29 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   }
 
   /* changing the text and image of step text box and step-img box for numbers of 1 and 3*/
-  .step-text-box-01 {
+  /* MY SOLUTION => writing 01 & 03 in classes******* */
+  /* .step-text-box-01 {
     grid-row: 2/3;
   }
 
   .step-text-box-03 {
     grid-row: 6/7;
+  } */
+  /* MY SOLUTION => writing 01 & 03 in classes******* */
+
+  /* JONAS SOLUTION => using nth-child()************* */
+  .step-img-box:nth-child(2) {
+    /* this is second child of the GRID => it means first mobile photo */
+    /* grid-row: 1; OR*/
+    grid-row: 1/2;
   }
+
+  .step-img-box:nth-child(6) {
+    /* this is sixth(last) child of the GRID => it means third mobile photo */
+    /* grid-row: 5; OR*/
+    grid-row: 5/6;
+  }
+  /* JONAS SOLUTION => using nth-child()************* */
 }
 
 /* - Font sizes (px):
