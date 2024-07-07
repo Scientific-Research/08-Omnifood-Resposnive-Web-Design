@@ -266,7 +266,8 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   }
 
   .grid--footer {
-    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: repeat(6, 1fr);
   }
 
   /* To bring the Account, Company and Resources on Top side of the footer and Logo and Comtact us at the bottom side of the footer!*/
@@ -295,6 +296,19 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   /* .nav-col {
     grid-row: 1;
   } */
+
+  .nav-col {
+    grid-template-columns: 1fr 1fr;
+    /* Using Span to say, every item can take how many cells in a GRID? here 2 cells! */
+    grid-column: span 2;
+  }
+
+  .address-col,
+  .logo-col {
+    grid-template-columns: 1fr 1fr 1fr;
+    /* Using Span to say, every item can take how many cells in a GRID? here 3 cells! */
+    grid-column: span 3;
+  }
 }
 
 /* - Font sizes (px):
