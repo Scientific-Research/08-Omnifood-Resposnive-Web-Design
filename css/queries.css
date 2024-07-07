@@ -300,6 +300,9 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   .nav-col {
     /* Using Span to say, every item can take how many cells in a GRID? here 2 cells! */
     grid-column: span 2;
+
+    /* We can here change the gap, but it is in original .grid class in general.css and we don't want to manipulate that, that's why we use margin-bottom instead!*/
+    margin-bottom: 3.2rem;
   }
 
   .address-col,
