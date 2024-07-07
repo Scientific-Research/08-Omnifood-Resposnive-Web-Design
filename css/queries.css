@@ -298,14 +298,12 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   } */
 
   .nav-col {
-    grid-template-columns: 1fr 1fr;
     /* Using Span to say, every item can take how many cells in a GRID? here 2 cells! */
     grid-column: span 2;
   }
 
   .address-col,
   .logo-col {
-    grid-template-columns: 1fr 1fr 1fr;
     /* Using Span to say, every item can take how many cells in a GRID? here 3 cells! */
     grid-column: span 3;
   }
