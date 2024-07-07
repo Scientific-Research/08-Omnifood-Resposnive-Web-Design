@@ -400,6 +400,12 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   .testimonials {
     grid-template-columns: 1fr;
   }
+
+  /* changing from 2*6 to 3*4 */
+  .gallery {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.2rem;
+  }
 }
 
 /* - Font sizes (px):
