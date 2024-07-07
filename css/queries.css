@@ -361,6 +361,10 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   .hero-img {
     width: 80%; /*get the 80% width of its parent(hero-image-box) which is a complete GRID cell.*/
   }
+
+  .logos img {
+    height: 1.2rem;
+  }
 }
 
 /* - Font sizes (px):
