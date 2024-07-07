@@ -395,6 +395,11 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     /* Translate is simply the easiest way of moving the elements around without effecting the rest of elements around it => positive side of the Y axis is bottom and negative side is top => it is exactly the reverse of mathematical axis!*/
     transform: translateY(4.8rem);
   }
+
+  /* We did this one manually, that's why we have to change it here too manually. We didn't use grid--2-cols, otherwise we have to chnage it top!*/
+  .testimonials {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* - Font sizes (px):
