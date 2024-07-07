@@ -270,6 +270,8 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   }
 
   /* To bring the Account, Company and Resources on Top side of the footer and Logo and Comtact us at the bottom side of the footer!*/
+  /* MY SOLUTION => THIS SOLUTION IS IN DETAILS */
+  /* ***************************************** */
   .nav-col-Account {
     grid-column: 1/2;
     grid-row: 1/2;
@@ -284,6 +286,15 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     grid-column: 3/-1;
     grid-row: 1/2;
   }
+  /* ***************************************** */
+
+  /* ***************************************** */
+  /* JONAS SOLUTION => Very short => Personaly i don't like it - I like my Solution in details!*/
+  /* ***************************************** */
+  /* The Account, Company and Resources which have nav-col as class will move from second row to the first row! */
+  /* .nav-col {
+    grid-row: 1;
+  } */
 }
 
 /* - Font sizes (px):
