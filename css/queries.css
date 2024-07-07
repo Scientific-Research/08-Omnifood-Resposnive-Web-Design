@@ -234,6 +234,30 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
   }
 }
 
+/******************************************/
+/*BELOW 704px (Smaller Tablets in Landscape mode and not in Portrait mode!)*/
+/******************************************/
+/* 700 / 16px = 43.75em => 44em * 16 = 704px*/
+@media (max-width: 44em) {
+  /* Change it to two columns */
+  .grid--3-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* Change it to two columns */
+  .grid--4-cols {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .diets {
+    /* Bring the diet section in the middle under the two cards, and specify the two columns(the entire columns) to that! */
+    grid-column: 1/-1;
+
+    /* to center the content in the middle of the GRID CELL(TWO COLUMNS) and not in the middle of the container => that's why we use justify-self:cente and not the justify-content:center*/
+    justify-self: center;
+  }
+}
+
 /* - Font sizes (px):
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98 
 
