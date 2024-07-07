@@ -406,6 +406,22 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     grid-template-columns: repeat(4, 1fr);
     gap: 1.2rem;
   }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 32rem;
+    /* grid-row: 1/2; OR*/
+    /* place the image first and as the second the text */
+    grid-row: 1;
+  }
+
+  /* expanding the text on all the sides! */
+  .cta-text-box {
+    padding: 3.2rem;
+  }
 }
 
 /* - Font sizes (px):
