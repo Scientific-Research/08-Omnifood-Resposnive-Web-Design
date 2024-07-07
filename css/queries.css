@@ -256,6 +256,34 @@ em is current font-size - BUT WE TAKE BOTH OF THEM HERE AS EQUAL AND USE EM AND 
     /* to center the content in the middle of the GRID CELL(TWO COLUMNS) and not in the middle of the container => that's why we use justify-self:cente and not the justify-content:center*/
     justify-self: center;
   }
+
+  .heading-secondary {
+    margin-bottom: 4.8rem;
+  }
+
+  .pricing-plan {
+    width: 100%;
+  }
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /* To bring the Account, Company and Resources on Top side of the footer and Logo and Comtact us at the bottom side of the footer!*/
+  .nav-col-Account {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .nav-col-Company {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .nav-col-Resources {
+    grid-column: 3/-1;
+    grid-row: 1/2;
+  }
 }
 
 /* - Font sizes (px):
